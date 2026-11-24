@@ -1,0 +1,16 @@
+node_modules
+dist
+*.tsbuildinfo
+.DS_Store
+
+# Local environment; the example file is committed
+.env*
+!.env.example
+
+# Vercel and Eve build output
+.vercel
+.eve
+.output
+.nitro
+
+.superpowers/

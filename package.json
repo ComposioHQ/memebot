@@ -1,0 +1,27 @@
+{
+  "name": "imessage-memebot",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eve build",
+    "dev": "eve dev",
+    "eval": "eve eval",
+    "start": "eve start",
+    "test": "vitest run",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@composio/core": "^0.31.0",
+    "@composio/experimental": "0.2.9",
+    "eve": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.x",
+    "typescript": "7.0.2",
+    "vitest": "^4.0.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
