@@ -1,4 +1,4 @@
-# imessage-memebot
+# memebot
 
 **Text the bot anything: a topic, a mood, a friend to roast. It texts back a meme.**
 
@@ -6,7 +6,7 @@ Built on [Eve](https://github.com/vercel/eve) (Vercel's agent framework), [Photo
 
 ## Deploy with Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FComposioHQ%2Fmemebot&project-name=imessage-memebot&repository-name=imessage-memebot&env=COMPOSIO_API_KEY,IMESSAGE_PROJECT_ID,IMESSAGE_PROJECT_SECRET,IMESSAGE_WEBHOOK_SECRET&envDescription=Get%20COMPOSIO_API_KEY%20at%20https%3A%2F%2Fdashboard.composio.dev%2F~%2Fproject%2Fapi-keys%20%28enable%20Instant%20tools%20for%20the%20project%20at%20https%3A%2F%2Fdashboard.composio.dev%2F~%2Fproject%2Fsettings%2Fgeneral%29.%20Create%20a%20free%20project%20at%20https%3A%2F%2Fapp.photon.codes%2F%20for%20IMESSAGE_PROJECT_ID%20and%20IMESSAGE_PROJECT_SECRET.%20Leave%20IMESSAGE_WEBHOOK_SECRET%20as%20a%20placeholder%20for%20now%3B%20after%20the%20first%20deploy%2C%20register%20the%20webhook%20in%20Photon%20and%20set%20the%20real%20value%20%28see%20README%20Setup%29.&envLink=https%3A%2F%2Fgithub.com%2FComposioHQ%2Fmemebot%23setup)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FComposioHQ%2Fmemebot&project-name=memebot&repository-name=memebot&env=COMPOSIO_API_KEY,IMESSAGE_PROJECT_ID,IMESSAGE_PROJECT_SECRET,IMESSAGE_WEBHOOK_SECRET&envDescription=Get%20COMPOSIO_API_KEY%20at%20https%3A%2F%2Fdashboard.composio.dev%2F~%2Fproject%2Fapi-keys%20%28enable%20Instant%20tools%20for%20the%20project%20at%20https%3A%2F%2Fdashboard.composio.dev%2F~%2Fproject%2Fsettings%2Fgeneral%29.%20Create%20a%20free%20project%20at%20https%3A%2F%2Fapp.photon.codes%2F%20for%20IMESSAGE_PROJECT_ID%20and%20IMESSAGE_PROJECT_SECRET.%20Leave%20IMESSAGE_WEBHOOK_SECRET%20as%20a%20placeholder%20for%20now%3B%20after%20the%20first%20deploy%2C%20register%20the%20webhook%20in%20Photon%20and%20set%20the%20real%20value%20%28see%20README%20Setup%29.&envLink=https%3A%2F%2Fgithub.com%2FComposioHQ%2Fmemebot%23setup)
 
 Then finish the [Setup](#setup) below (the webhook secret only exists after the first deploy).
 
@@ -15,7 +15,7 @@ Then finish the [Setup](#setup) below (the webhook secret only exists after the 
 First finish Setup steps 1 and 2 (a Composio key with Instant tools enabled, and a Photon project), run `gh auth login`, and have a Vercel account. Then:
 
 ```bash
-npx @composio/imessage-memebot deploy
+npx @composio/memebot deploy
 ```
 
 ## Setup

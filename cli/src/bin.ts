@@ -4,11 +4,11 @@ import { deploy } from "./deploy.js";
 import { terminalIO } from "./terminal.js";
 
 if (process.argv[2] !== "deploy") {
-  console.error("Usage: imessage-memebot deploy");
+  console.error("Usage: memebot deploy");
   process.exit(1);
 }
 
-intro("imessage-memebot deploy");
+intro("memebot deploy");
 try {
   await deploy(terminalIO);
   outro("Done.");

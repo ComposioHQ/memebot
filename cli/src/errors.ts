@@ -1,5 +1,5 @@
 /** What a user re-runs after fixing a failure. */
-export const RERUN = "npx @composio/imessage-memebot deploy";
+export const RERUN = "npx @composio/memebot deploy";
 
 /** Thrown when a command cannot be started because it is not installed. */
 export class CommandNotFoundError extends Error {
