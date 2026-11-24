@@ -1,10 +1,10 @@
 {
-  "name": "@composio/imessage-memebot",
+  "name": "@composio/memebot",
   "version": "0.1.0",
   "description": "One-command deploy for the iMessage meme bot",
   "type": "module",
   "bin": {
-    "imessage-memebot": "dist/bin.js"
+    "memebot": "dist/bin.js"
   },
   "files": [
     "dist"

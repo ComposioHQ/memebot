@@ -108,7 +108,7 @@ describe("missing tools", () => {
     const message = await deploy(io, "/work").catch((error: Error) => error.message);
     expect(message).toContain(`${name} is not installed`);
     expect(message).toMatch(/brew install|https:\/\//);
-    expect(message).toContain("re-run `npx @composio/imessage-memebot deploy`");
+    expect(message).toContain("re-run `npx @composio/memebot deploy`");
   });
 
   it("says npx is missing instead of reporting a login problem", async () => {
@@ -138,7 +138,7 @@ describe("login", () => {
   it("names the exact command when the user declines the Vercel login", async () => {
     const { io } = fakeIO(answers, { loggedOut: ["vercel"], acceptLogin: false });
     await expect(deploy(io, "/work")).rejects.toThrow(
-      "Run `npx --yes vercel@66 login`, then re-run `npx @composio/imessage-memebot deploy`",
+      "Run `npx --yes vercel@66 login`, then re-run `npx @composio/memebot deploy`",
     );
   });
 
@@ -147,7 +147,7 @@ describe("login", () => {
     const message = await deploy(io, "/work").catch((error: Error) => error.message);
     expect(message).toContain("Run it yourself");
     expect(message).toContain("`npx --yes vercel@66 login`");
-    expect(message).toContain("re-run `npx @composio/imessage-memebot deploy`");
+    expect(message).toContain("re-run `npx @composio/memebot deploy`");
   });
 
   it("offers to log in to GitHub, then continues", async () => {
@@ -208,7 +208,7 @@ describe("failures", () => {
     expect(message).toContain("last-line");
     expect(message).not.toContain("first-line");
     expect(message).toContain("Fix:");
-    expect(message).toContain("re-run `npx @composio/imessage-memebot deploy`");
+    expect(message).toContain("re-run `npx @composio/memebot deploy`");
     for (const secret of ["ck_123", "secret_1", "whsec_1"]) expect(message).not.toContain(secret);
   });
 
@@ -250,7 +250,7 @@ describe("re-running", () => {
 
   it("neither creates nor clones when the repo and directory both exist", async () => {
     const cwd = mkdtempSync(path.join(tmpdir(), "memebot-"));
-    mkdirSync(path.join(cwd, "imessage-memebot"));
+    mkdirSync(path.join(cwd, "memebot"));
     const { io, calls } = fakeIO(answers, { repoExists: true });
     await deploy(io, cwd);
     const gh = calls.filter((call) => call.tool === "gh").map((call) => call.args.slice(0, 2).join(" "));

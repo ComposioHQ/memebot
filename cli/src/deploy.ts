@@ -36,7 +36,7 @@ const installFix =
     ? "Run `xcode-select --install` (macOS Command Line Tools), or install the failing tool."
     : "Install or repair the failing tool.";
 
-const DEFAULT_PROJECT_NAME = "imessage-memebot";
+const DEFAULT_PROJECT_NAME = "memebot";
 
 async function askRequired(io: DeployIO, message: string, options?: { secret?: boolean }): Promise<string> {
   const answer = (await io.ask(message, options)).trim();
